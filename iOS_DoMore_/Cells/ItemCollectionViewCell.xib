@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ItemCollectionViewCell" customModule="iOS_DoMore_" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="177" height="208"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="177" height="208"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RZY-ct-FEJ">
+                        <rect key="frame" x="0.0" y="163" width="177" height="45"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jordan's Basketball Team" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f07-Nu-Owq">
+                                <rect key="frame" x="10" y="15.5" width="157" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="f07-Nu-Owq" secondAttribute="trailing" constant="10" id="REu-ek-ZIE"/>
+                            <constraint firstItem="f07-Nu-Owq" firstAttribute="leading" secondItem="RZY-ct-FEJ" secondAttribute="leading" constant="10" id="RWr-oJ-UaL"/>
+                            <constraint firstAttribute="height" constant="45" id="m8q-CR-EUR"/>
+                            <constraint firstItem="f07-Nu-Owq" firstAttribute="centerY" secondItem="RZY-ct-FEJ" secondAttribute="centerY" id="xGJ-Fq-hPz"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="post_img_1" translatesAutoresizingMaskIntoConstraints="NO" id="Czl-R5-raW">
+                        <rect key="frame" x="0.0" y="0.0" width="177" height="163"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="RZY-ct-FEJ" secondAttribute="trailing" id="IZE-Ay-Ceq"/>
+                <constraint firstItem="RZY-ct-FEJ" firstAttribute="top" secondItem="Czl-R5-raW" secondAttribute="bottom" id="K0v-bz-dab"/>
+                <constraint firstAttribute="trailing" secondItem="Czl-R5-raW" secondAttribute="trailing" id="LSW-12-K9V"/>
+                <constraint firstItem="Czl-R5-raW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="efd-Ny-Ag1"/>
+                <constraint firstItem="Czl-R5-raW" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="oj4-gd-VgY"/>
+                <constraint firstAttribute="bottom" secondItem="RZY-ct-FEJ" secondAttribute="bottom" id="uLw-wI-axN"/>
+                <constraint firstItem="RZY-ct-FEJ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="vlb-P2-nVy"/>
+            </constraints>
+            <size key="customSize" width="177" height="208"/>
+            <connections>
+                <outlet property="comment_Label" destination="f07-Nu-Owq" id="JUO-PV-woj"/>
+                <outlet property="post_Image" destination="Czl-R5-raW" id="fWp-zq-9eh"/>
+            </connections>
+            <point key="canvasLocation" x="-382" y="-226"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="post_img_1" width="500" height="626"/>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
